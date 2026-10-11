@@ -25,7 +25,7 @@
         const volume = document.getElementById("volume").valueAsNumber;
         const hoursSaved = (before - after) * volume / 60; 
         
-    document.getElementById("result").textContent = "The button works!";
+    document.getElementById("result").textContent = hoursSaved.toFixed(1) + " hours saved per month.";
       }
     </script>
   </body>
