@@ -16,7 +16,12 @@
     <label for="volume">Number of tasks per month:</label>
     <input type="number" id="volume" min="0" step="1">
     <br><br>
-    <button type="button">calculate savings</button>
+    <button type="button" onclick="calculateSavings()">CalculateSavings</button>
     <p id="result">Your savings will appear here.</p>
+    <script>
+      function calculateSavings() { 
+    document.getElementById("result").textContent = "The button works!";
+      }
+    </script>
   </body>
 </html>
