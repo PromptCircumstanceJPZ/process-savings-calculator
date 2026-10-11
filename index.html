@@ -20,6 +20,11 @@
     <p id="result">Your savings will appear here.</p>
     <script>
       function calculateSavings() { 
+        const before = document.getElementById("before").valueAsNumber;
+        const after = document.getElementById("after"). valueAsNumber;
+        const volume = document.getElementById("volume").valueAsNumber;
+        const hoursSaved = (before - after) * volume / 60; 
+        
     document.getElementById("result").textContent = "The button works!";
       }
     </script>
